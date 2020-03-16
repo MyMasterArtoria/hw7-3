@@ -1,6 +1,7 @@
-import java.util.LinkedList;
+import java.util.LinkedList; 
 import java.util.List;
 import java.util.ArrayList;
+import static org.junit.Assert.*;
 
 class TrieNode {
     char data;     
@@ -104,19 +105,6 @@ class Trie {
 
 public class Test {
 	 public static void main(String[] args) {            
-            Trie t = new Trie();            
-            t.insert("amazon"); 
-            t.insert("amazon prime"); 
-			t.insert("amazing"); 			 
-            t.insert("amazing spider man"); 
-            t.insert("amazed");
-            t.insert("alibaba");
-            t.insert("ali express");
-            t.insert("ebay");
-            t.insert("walmart");          
-			List<String> a= t.autocomplete("amaz");
-			for (int i = 0; i < a.size(); i++) {
-				System.out.println(a.get(i));
-			}
+           
 	  }
 }
